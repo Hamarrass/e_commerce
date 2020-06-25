@@ -1,0 +1,15 @@
+
+<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<span class = "glyphicon  glyphicon-star"
+      [ngClass]="{'glyphicon-star-empty': isActive}"
+
+      [ngStyle]="{
+      'color' : isActive ? 'red' : 'blue',
+      'font-size': isActive ? '100px' : '200px'
+      }"
+      (click)="onClick()"
+>
+
+</span>
+
